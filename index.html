@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/slider.css">
+    <title>Javascript slider</title>
+</head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">My first javascript slideshow</h1>
+        </header>
+        <main>
+            <div class="slideshow__container">
+                <img class="slideshow__slides" src="images/slide__1.jpg">
+                <img class="slideshow__slides" src="images/slide__2.jpg">
+                <img class="slideshow__slides" src="images/slide__3.jpg">
+                <img class="slideshow__slides" src="images/slide__4.jpg">
+                    <div class="slideshow__buttons">
+                <button class="slideshow__button-left" onclick="plusSlide(-1)"><</button>
+                <button class="slideshow__button-pause" id="pause">pause</button>
+                <button class="slideshow__button-right" onclick="plusSlide(1)">></button>
+                    </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">&copy Kevin van der Windt</p>
+        </footer>
+        <script src="js/slider.js"></script>
+    </body>
+</html>
