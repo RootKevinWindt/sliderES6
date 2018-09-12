@@ -1,7 +1,7 @@
 //start point
-var slidePage = 1;
+let slidePage = 1;
 //timer set to 0
-var timer = null;
+let timer = null;
 //variable for de slides start with 1
 showSlides(slidePage);
 //function to go to next image
@@ -20,7 +20,7 @@ function currentSlide(image) {
 }
 function showSlides(image){
     //make empty variable
-    var i;
+    let i;
     //connect images to variable
     var slides = document.getElementsByClassName("slideshow__slides");
     //if empty image is there go to next image
@@ -51,9 +51,9 @@ document.onkeydown = function(e){
     }
 };
 //the slideshow is playing
-var playing = true;
+let playing = true;
 //connection pause button
-var pauseButton = document.getElementById('pause');
+const pauseButton = document.getElementById('pause');
 
 function pauseSlideshow(){
     pauseButton.textContent = 'Play';
